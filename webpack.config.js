@@ -9,16 +9,9 @@ const devWebpackConfig = require('./build/webpack.dev.js');
 const prodWebpackConfig = require('./build/webpack.prod.js');
 
 
-module.exports = env => merge(env.NODE_ENV === 'dev' ? devWebpackConfig : prodWebpackConfig, {
+module.exports =  {
   entry: {
     app: './src/client/index.jsx',
-    vendor: [
-      'react',
-      'mobx',
-      'react-dom',
-      'mobx-react',
-      'react-router-dom',
-    ],
   },
   output: {
     filename: '[name].[hash].js',

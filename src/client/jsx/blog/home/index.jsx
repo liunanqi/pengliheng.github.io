@@ -73,5 +73,6 @@ export default class Home extends React.Component {
 				<ReactMarkdown className="markdown-body" source={home} />
 			</div>
 		)
+
 	}
 }
