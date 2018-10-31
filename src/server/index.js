@@ -14,8 +14,7 @@ const allRouter = require('./routes/index.js');
 // application
 const app = new Koa();
 const server = http.createServer(app.callback());
-const port = process.env.PORT || config.port;
-
+const port = process.env.PORT || config.port
 app
   .use(json())
   .use(logger())
